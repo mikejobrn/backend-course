@@ -11,5 +11,3 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 [#Slide](./aulas/aula02/Aula%202.pdf)
 
 ### Aula 3 - Primeira prática
-
-
