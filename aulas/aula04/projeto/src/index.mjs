@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+app.use(express.json());
+
 const PORT = process.env.PORT || 3000;
 
 const cartas = [
@@ -49,6 +51,77 @@ app.get('/cartas/:id', (request, response) => {
   }
 
   return response.send(cartaSolicitada);
+});
+
+app.post('/cartas', (request, response) => {
+  const novaCarta = {
+    id: cartas[cartas.length - 1].id + 1,
+    ...request.body
+  };
+
+  cartas.push(novaCarta);
+
+  return response.status(201).send(novaCarta)
+});
+
+app.put('/cartas/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+
+  if (isNaN(id)) {
+    return response.status(400).send({ msg: 'ID inválido!' });
+  }
+
+  const indexCartaBuscada = cartas.findIndex((carta) => carta.id === id);
+
+  if ( indexCartaBuscada === -1 ) {
+    return response.status(404).send({ msg: 'ID não encontrado'});
+  }
+
+  cartas[indexCartaBuscada] = {
+    id: id,
+    ...request.body,
+  };
+
+  return response.status(200).send(cartas[indexCartaBuscada]);
+});
+
+app.patch('/cartas/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+
+  if (isNaN(id)) {
+    return response.status(400).send({ msg: 'ID inválido!' });
+  }
+
+  const indexCartaBuscada = cartas.findIndex((carta) => carta.id === id);
+
+  if ( indexCartaBuscada === -1 ) {
+    return response.status(404).send({ msg: 'ID não encontrado'});
+  }
+
+  cartas[indexCartaBuscada] = {
+    ...cartas[indexCartaBuscada],
+    ...request.body,
+  }
+
+  return response.status(200).send(cartas[indexCartaBuscada]);
+});
+
+app.delete('/cartas/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+
+  if (isNaN(id)) {
+    return response.status(400).send({ msg: 'ID inválido!' });
+  }
+
+  const indexCartaBuscada = cartas.findIndex((carta) => carta.id === id);
+
+  if ( indexCartaBuscada === -1 ) {
+    return response.status(404).send({ msg: 'ID não encontrado'});
+  }
+
+  const cartaExcluida = cartas.splice(indexCartaBuscada, 1);
+
+  return response.status(200).send(...cartaExcluida);
 });
 
 app.listen(PORT, () => {
