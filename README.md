@@ -17,3 +17,7 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 ### Aula 4 - REST
 
 [#Slide](./aulas/aula04/Aula%2004%20-%20REST.pdf) [#Projeto](./aulas/aula04/projeto/)
+
+### Aula 5 - Arquiteturas Backend
+
+[#Slide](./aulas/aula05/Aula%2005%20-%20Arquitetura%20backend.pdf)
