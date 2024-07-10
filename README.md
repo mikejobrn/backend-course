@@ -21,3 +21,20 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 ### Aula 5 - Arquiteturas Backend
 
 [#Slide](./aulas/aula05/Aula%2005%20-%20Arquitetura%20backend.pdf)
+
+### Aula 8 - Introdução ao Express
+
+[#Projeto](./aulas/aula08/)
+
+### Aula 9 - Roteamento
+
+[#Slide](./aulas/aula09/Aula%2009%20-%20Usando%20rotas%20no%20Express%20.pdf)
+
+### Aula 10 - Projeto simples sobre rotas
+
+[#Projeto](./aulas/aula10/projeto/)
+
+### Aula 11 - Middlewares
+
+[#Slide](./aulas/aula11/Aula%2011%20-%20Middlewares.pdf) [#Projeto](./aulas/aula11/projeto/)
+
