@@ -38,3 +38,6 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 
 [#Slide](./aulas/aula11/Aula%2011%20-%20Middlewares.pdf) [#Projeto](./aulas/aula11/projeto/)
 
+### Aula 13 - Validação
+
+[#Slide](./aulas/aula13/Aula%2013%20-%20Validação%20de%20dados.pdf)
