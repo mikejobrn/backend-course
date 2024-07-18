@@ -41,3 +41,7 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 ### Aula 13 - Validação
 
 [#Slide](./aulas/aula13/Aula%2013%20-%20Validação%20de%20dados.pdf)
+
+### Aula 14 e 15 - Prática de validação
+
+[#Projeto](./aulas/aula15/projeto/)
