@@ -1,0 +1,21 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.mjs",
+    "start:debug": "DEBUG=express:* node index.js"
+  },
+  "author": "Hamurabi Araujo",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0"
+  },
+  "type": "module"
+}
