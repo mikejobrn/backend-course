@@ -45,3 +45,7 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 ### Aula 14 e 15 - Prática de validação
 
 [#Projeto](./aulas/aula15/projeto/)
+
+### Aulas 16 a 18 - Reorganizando o projeto por camadas
+
+[#Projeto](./aulas/aula16-18/projeto/)
