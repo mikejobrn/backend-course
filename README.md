@@ -49,3 +49,7 @@ Repositório para manter os materiais de aula da disciplina de Desenvolvimento B
 ### Aulas 16 a 18 - Reorganizando o projeto por camadas
 
 [#Projeto](./aulas/aula16-18/projeto/)
+
+### Aulas 19 - Introdução a testes automatizados
+
+[#Projeto](./aulas/aula19/projeto/)
