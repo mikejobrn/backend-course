@@ -24,8 +24,8 @@ export class UsuarioRepository {
 
     public create(usuario: Usuario) {
         const novoUsuario = {
+            ...usuario,
             id: this._usuarios[this._usuarios.length - 1].id + 1,
-            ...usuario
         }
 
         this._usuarios.push(novoUsuario);

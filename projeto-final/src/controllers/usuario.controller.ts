@@ -32,8 +32,8 @@ export default class UsuarioController {
 
     try {
       dadoAtualizado = this._usuarioService.update({
+        ...request.body,
         id: id,
-        ...request.body
       });
     } catch (error: any) {
       return response.status(400).send({ error: error.message });
