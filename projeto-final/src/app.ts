@@ -9,6 +9,7 @@ import { ValidarIdMiddleware } from "./shared/middlewares";
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 app.use(ValidarIdMiddleware);
 app.use('/desenvolvedores', DesenvolvedorRouter);
 app.use('/generos', GeneroRouter);
